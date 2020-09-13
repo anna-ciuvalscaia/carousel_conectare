@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of OWL carousel</title>
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="interface">
+        <header>
+            <h1>Simple & Beautiful Interface</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati quae quo ad iste ipsum officiis deleniti asperiores sit.</h2>
+            <img id="line" src="images/line.svg" alt="line">
+        </header>
+        <div>
+            <div class="owl-carousel owl-theme">
+                <div><img src="images/1.jpg" alt=""></div>
+                <div><img src="images/2.jpg" alt=""></div>
+                <div><img src="images/3.jpg" alt=""></div>
+                <div><img src="images/4.jpg" alt=""></div>
+                <div><img src="images/5.jpg" alt=""></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" 
+    crossorigin="anonymous"></script>
+
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+  $(".owl-carousel").owlCarousel(
+      {
+          loop: true,
+          responsive: {
+              0: {
+                  items: 1
+              },
+              640: {
+                  items: 2
+              },
+              900: {
+                  items: 3
+              },
+              1200: {
+                  items: 4,
+                  nav: true
+              }
+          }
+      }
+  );
+});
+    </script>
+</body>
+</html>
